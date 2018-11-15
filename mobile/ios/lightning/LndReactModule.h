@@ -10,5 +10,8 @@
 #import <React/RCTEventEmitter.h>
 
 @interface LndReactModule : RCTEventEmitter <RCTBridgeModule>
+@property (nonatomic) NSDictionary *syncMethods;
+@property (nonatomic) NSDictionary *streamMethods;
+@property (nonatomic) NSMutableDictionary *activeStreams;
 
 @end
