@@ -26,6 +26,7 @@ public class MainApplication extends ExpoApplication {
 
         // Needed for `react-native link`
         // new MainReactPackage()
+        new LndNativePackage()
     );
   }
 
