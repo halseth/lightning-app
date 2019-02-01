@@ -50,7 +50,7 @@ static NSString* const respEventTypeError = @"error";
 
 @end
 
-@interface RecvStream:NSObject<LndmobileCallback>
+@interface RecvStream:NSObject<LndmobileRecvStream>
 @property (nonatomic) NSString* streamId;
 @property (nonatomic) RCTEventEmitter* eventEmitter;
 
