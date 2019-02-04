@@ -19,7 +19,7 @@ import AppStorage from './app-storage';
 import GrpcAction from './grpc-mobile';
 import NavAction from './nav-mobile';
 import WalletAction from './wallet';
-import LogAction from './log';
+import LogAction from './log-mobile';
 import InfoAction from './info';
 import NotificationAction from './notification';
 import ChannelAction from './channel';
@@ -37,9 +37,9 @@ store.init(); // initialize computed values
 
 export const ipc = { send: () => {}, listen: () => {} };
 export const db = new AppStorage(store, AsyncStorage);
-export const log = new LogAction(store, ipc);
-export const nav = new NavAction(store, NavigationActions);
 export const grpc = new GrpcAction(store, NativeModules, NativeEventEmitter);
+export const log = new LogAction(store, grpc);
+export const nav = new NavAction(store, NavigationActions);
 export const notify = new NotificationAction(store, nav);
 export const wallet = new WalletAction(store, grpc, db, nav, notify);
 export const info = new InfoAction(store, grpc, nav, notify);
