@@ -32,7 +32,7 @@ export function info(...args) {
 export function error(...args) {
   console.error(...args);
   pushLogs(''); // newline
-  pushLogs(`ERROR: ${args[0]}`);
+  pushLogs(`ERROR: ${args[0]}, message: ${args[1] && args[1].message}`);
   pushLogs(''); // newline
 }
 
