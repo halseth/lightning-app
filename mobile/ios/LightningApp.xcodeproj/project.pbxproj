@@ -302,7 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LightningApp/LightningApp.entitlements;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 19;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = F7DV2MY8JF;
 				ENABLE_BITCODE = NO;
@@ -312,6 +312,7 @@
 				);
 				INFOPLIST_FILE = LightningApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.2.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -329,7 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LightningApp/LightningApp.entitlements;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = F7DV2MY8JF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -338,6 +339,7 @@
 				);
 				INFOPLIST_FILE = LightningApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.2.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
